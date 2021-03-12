@@ -38,7 +38,7 @@ def image_mars():
                     <h1>Жди нас, Марс!</h1>
                   </body>
                 </html>
-                <img src="{url_for('static', filename='img/mars.jpg')}" 
+                <img src="{url_for('static', filename='static/img/mars.jpg')}" 
                    alt="image not found">
                 <body>
                     </br>Вот она какая, красная планета</h1>
@@ -53,14 +53,14 @@ def promotion_image():
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-                    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/styles.css')}" />
+                    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='static/css/styles.css')}" />
                     <title>Колонизация</title>
                   </head>
                   <body>
                     <h1>Жди нас, Марс!</h1>
                   </body>
                 </html>
-                <img src="img/mars.jpg" alt="image not found">
+                <img src="static/img/mars.jpg" alt="image not found">
                 <body>
                     <div class="alert-dark" role="alert">
                         <h2>Человечество вырастает из детства.<h2>
