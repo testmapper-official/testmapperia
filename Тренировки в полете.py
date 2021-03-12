@@ -3,10 +3,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/<title>')
-@app.route('/index/<title>')
-def index(title):
-    return render_template('base.html', title=title)
+@app.route('/')
+@app.route('/training/<profession>')
+def index(profession):
+    return render_template('trainings.html', title=profession)
 
 
 if __name__ == '__main__':
