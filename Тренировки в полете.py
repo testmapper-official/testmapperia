@@ -4,9 +4,11 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/training/<profession>')
-def index(profession):
-    return render_template('trainings.html', title=profession)
+def start():
+    return 'добавьте в URL /training/<prof>'
+@app.route('/training/<prof>')
+def index(prof):
+    return render_template('trainings.html', title=prof)
 
 
 if __name__ == '__main__':
