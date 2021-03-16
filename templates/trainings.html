@@ -21,12 +21,15 @@
 <main role="main" class="container">
     {% block content %}{% endblock %}
 </main>
- {% if prof == врач%}
+<body>
+ {% if 'врач' in prof%}
     <h1>Научные симуляторы</h1>
-    <img src="{url_for('static', filename='static/img/sci.png')}">
- {% elif prof == строитель or prof == инженер %}
+    <img src="{url_for('static', filename='static/img/sci.jpg')}"
+                   alt="image not found">
+ {% elif 'строитель' in prof or 'инженер' in prof %}
     <h1>Инженерные тренажеры</h1>
-    <img src="{url_for('static', filename='static/img/ing.png')}">
+    <img src="{url_for('static', filename='static/img/ing.jpg')}"
+                   alt="image not found">
  {% endif %}
 </body>
 </html>

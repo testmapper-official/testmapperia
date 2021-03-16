@@ -8,7 +8,7 @@ def start():
     return 'добавьте в URL /training/<prof>'
 @app.route('/training/<prof>')
 def index(prof):
-    return render_template('trainings.html', title=prof)
+    return render_template('trainings.html', prof=prof)
 
 
 if __name__ == '__main__':
